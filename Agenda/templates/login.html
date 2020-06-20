@@ -1,17 +1,27 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
-     <title> Agenda </title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<title> Agenda </title>
 </head>
 <body>
-<h1> Login </h1>
-<div align="center">
+
+<div class="container">
 <form action="submit" method="POST">  {% csrf_token %}
-    <label> Usuario </label>
-    <input type= "text" name="username">
-    <label> Senha </label>
-    <input type= "password" name="password">
-    <button type="submit"> Entar </button>
+<div class="box">
+<h2> Login </h2>
+
+
+    <input type= "text"  placeholder="Enter Username" name="username"><br>
+
+     <input type= "password"  placeholder="Enter password" name="password"><br>
+    <button type="submit" > Sign in </button>
+</div>
 </div>
 </form>
 {% for message in messages %}
