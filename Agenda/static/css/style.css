@@ -1,18 +1,15 @@
-body{
-
+body {
     background-color: rgb(175, 185, 183);
 }
-h2{
 
+h2 {
     font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 1.5em;
     line-height: 1.4em;
-    
 }
 
-.email{
-
+.email {
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     margin-top: 20px;
@@ -28,32 +25,36 @@ h2{
     justify-content: center;
     align-items: center
 }
-.box {
-        margin-top: 120px;
-        width: 355px;
-        height: 420px;
-        background: #fff;
-        -webkit-box-shadow: 0px 0px 8px 2px #410404;
-        -moz-box-shadow: 0px 0px 8px 2px #000000;
-        box-shadow: 0px 0px 8px 2px #000000;
 
-        
-    }
-  
-  /* Full-width inputs */
-  input[type=text], input[type=password] {
+.box {
+    margin-top: 120px;
+    width: 355px;
+    height: 420px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 8px 2px #410404;
+    -moz-box-shadow: 0px 0px 8px 2px #000000;
+    box-shadow: 0px 0px 8px 2px #000000;
+}
+
+
+/* Full-width inputs */
+
+input[type=text],
+input[type=password] {
     width: 300px;
     padding: 12px 20px;
     margin: 8px 0;
     border: 1px solid rgb(99, 47, 47);
     border-radius: 10px;
     margin-top: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 
-  }
-  
-  /* Set a style for all buttons */
-  button {
-   background-color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: blue;
     color: white;
     padding: 14px 24px;
     margin: 8px 0;
@@ -63,14 +64,24 @@ h2{
     margin-left: 10px;
     border-radius: 10px;
     margin-top: 20px;
-  }
-  
-  /* Add a hover effect for buttons */
-  button:hover {
+}
+
+
+/* Add a hover effect for buttons */
+
+button:hover {
     opacity: 0.8;
-  }
-  img.avatar {
+}
+
+img.avatar {
     width: 40%;
     border-radius: 50%;
-  }
+}
+
+
 /* Add padding to containers */
+
+td {
+    font-style: italic;
+    font-size: 18px;
+}

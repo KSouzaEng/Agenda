@@ -4,26 +4,44 @@
 
 {% block content  %}
 
-<h2> Agendamento </h2>
 
-<a href="evento/">
-<button type="button"> Novo Evento </button>
-</a>
 
-<ul style="font-size: 18px">
+<p class="eventos"><a href="evento/" class="btn btn-primary stretched-link">Novo evento</a></p>
 
+
+<h2>Historico de compromissos</h2>
+
+<table   class="table" >
+  <thead>
+    <tr>
+      <th scope="col"> </th>
+      <th scope="col">Evento</th>
+      <th scope="col">Data/Hora</th>
+      <th scope="col">Ações</th>
+      
+
+    </tr>
+    </thead>
+<tbody class="corpo">
+<tr >
 {% for evento in eventos %}
-<li>
-<div style ={% if evento.get_evento_atrasado %} "color:red"{% endif %} >
-     
-     {{evento.titulo}} - {{evento.get_data_evento}} 
+<th >
+ <div style ={% if evento.get_evento_atrasado %} "color:red"{% endif %} >
 
-  <a href="evento/?id={{evento.id}}" >[Editar </a>
-  <a href="evento/delete/{{evento.id}}/">/ Excluir] </a>
+    
+   <td > {{evento.titulo}} </td>
+   <td > {{evento.get_data_evento}}</td>
+
+     <td> <a href="evento/?id={{evento.id}}" >Editar</a> 
+     <a href="evento/delete/{{evento.id}}/"> / Excluir  </a></td>
+</th>
+</tr>
+</tbody>
 
 </div>
-</li>
+
 {% endfor %}
 
-</ul>
+
+</table><br>
 {% endblock  %}
